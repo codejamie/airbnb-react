@@ -3,11 +3,14 @@ function Card({imageUrl, location, stars, date, host, price}) {
     <div className="card">
       <img src={imageUrl} alt={location} />
       <div className="captions">
-        <p>{location}</p>
-        <p>★{stars}</p>
-        <p>{date}</p>
-        <p>{host}</p>
-        <p>{price}</p>
+        <div className="caption-heading">
+          <p>{location}</p>
+          <p>★{stars}</p>
+        </div>
+        <div className="caption-host">
+          <p>{date} &bull; {host}</p>
+        </div>
+        <p className="price">{price}</p>
       </div>
     </div>
   ) 

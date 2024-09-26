@@ -1,5 +1,7 @@
 *, *::after, *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #root {
@@ -21,6 +23,42 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+
+.card {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.card img {
+  width: 270px;
+  height: 270px;
+  object-fit: cover;
+}
+
+.captions {
+  margin-top: 10px;
+}
+
+.captions .caption-heading {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.captions .caption-host {
+  color: darkgray;
+  display: flex;
+}
+
+.captions p.price {
+  margin-top: 8px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
