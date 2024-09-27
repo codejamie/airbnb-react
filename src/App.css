@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
+  border: none;
 }
 
 #root {
@@ -14,9 +16,77 @@
 body {
   margin: 0;
   display: flex;
-  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+.brand {
+  display: flex;
+  width: 33.33vw;
+  text-align: left;
+  padding-left: 1.5em;
+}
+
+.logo > img {
+  width: 30px;
+  margin-right: 5px;
+  padding-top: 5px;
+}
+
+.logo-text {
+  color: #ff385c;
+}
+
+.navbar .stays {
+  display: flex;
+  justify-content: center;
+  width: 33.33vw;
+}
+
+.stays > p, .account > p {
+  margin: 5px 20px;
+}
+
+.stays > p:first-child {
+  font-weight: 700;
+}
+
+.account {
+  display: flex;
+  justify-content: flex-end;
+  width: 33.33vw;
+  padding-right: 2.5em;
+}
+
+.account > p:first-child {
+  font-weight: 700;
+}
+
+.btn-account {
+  color: black;
+  width: 80px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid lightgray;
+  padding-top: 5px;
+  transition: transform 0.5s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.btn-account:hover {
+  transform: translateY(-2px);
+  cursor: pointer;
+  
+}
+
+.logo h2 {
+  color: #ff385c;
 }
 
 h1 {
