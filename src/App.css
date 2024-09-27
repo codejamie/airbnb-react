@@ -24,11 +24,19 @@ h1 {
   line-height: 1.1;
 }
 
+.properties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
 .card {
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  align-content: space-evenly;
+  margin: 20px 10px;
 }
 
 .card img {
