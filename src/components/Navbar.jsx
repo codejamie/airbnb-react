@@ -20,7 +20,7 @@ function Navbar() {
       <div className="account">
         <p>Airbnb your home</p>
 
-        <div class="btn-account">Account</div>
+        <div className="btn-account">Account</div>
       </div>
     </nav>
   ) 
